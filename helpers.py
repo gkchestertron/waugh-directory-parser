@@ -30,7 +30,7 @@ def do_mapping(mappings, rows, target_row):
 
 def map_house(last_name, house):
     target_row = ['' for x in xrange(61)]
-    target_row[0] = last_name
+    target_row[0] = last_name.strip()
     parents = map(lambda x: [x.split(' ')[0], ' '.join(x.split(' ')[1:])], list(set([j for i in house['rows'] for j in i[3]])))
     addresses = map(lambda x: x.split('%,%'), list(set(['{0}%,%{1}%,%{2}%,%{3}'.format(x[4],x[5],x[6],x[7]) for x in house['rows']])))
 

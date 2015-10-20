@@ -9,6 +9,7 @@ HOUSES = {}
 
 source = open(sys.argv[1], 'rt')
 target = open(sys.argv[2], 'wt')
+header = open('headers.csv', 'rU')
 
 # read file
 try:
@@ -41,6 +42,9 @@ finally:
 # write file
 try:
     writer = csv.writer(target)
+    reader = csv.reader(header)
+    
+    writer.writerow(next(reader))
 
     for house in HOUSES:
         writer.writerow(map_house(house, HOUSES[house]))
