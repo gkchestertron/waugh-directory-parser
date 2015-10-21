@@ -6,7 +6,8 @@ STUDENT_MAPPINGS = {
 PARENT_MAPPINGS = {
     'First Name'      : { 'source_idx': 0, 'target_idxes': [1,6,16,21]},
     'Last Name'       : { 'source_idx': 1, 'target_idxes': [2,7,17,22]},
-    'Primary Phone'   : { 'source_idx': 2, 'target_idxes': [3,8,18,23]},
+    'Primary Email'   : { 'source_idx': 2, 'target_idxes': [5,10,20,25]},
+    'Parent Phone'    : { 'source_idx': 3, 'target_idxes': [3,8,18,23]},
 }
 
 ADDRESS_MAPPINGS = {

@@ -39,9 +39,11 @@ def map_house(last_name, house):
         if i >= len(parents):
             continue
         parent = parents[i]
-        phone_number = house['rows'][i][8]
+        email = house['rows'][i][8]
+        phone_number = house['rows'][i][9]
         while len(parent) < 2:
             parent.append('')
+        parent.append(email)
         parent.append(phone_number)
 
     # map students

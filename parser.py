@@ -7,7 +7,7 @@ from   helpers import split_row, map_house
 
 HOUSES = {}
 
-source = open(sys.argv[1], 'rt')
+source = open(sys.argv[1], 'rU')
 target = open(sys.argv[2], 'wt')
 header = open('headers.csv', 'rU')
 
